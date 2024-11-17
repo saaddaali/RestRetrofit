@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/create_solde"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Solde"
+        android:inputType="numberDecimal"
+        android:layout_marginBottom="16dp" />
+
+    <Spinner
+        android:id="@+id/create_type_compte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/format_label"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="JSON Format" />
+
+        <Switch
+            android:id="@+id/format_toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="XML" />
+
+    </LinearLayout>
+
+</LinearLayout>
